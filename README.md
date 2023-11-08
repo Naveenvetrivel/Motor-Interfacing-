@@ -91,7 +91,8 @@ void loop() {
 ![280510746-d1172922-a971-473d-9295-a875b81d7b26](https://github.com/Naveenvetrivel/Motor-Interfacing-/assets/94165322/418a18e0-cbc3-4f62-9263-0a8f2133a953)
 
 ## OUTPUT:
-![Uploading 280510763-e36879a7-68b6-46c2-bbeb-c491d96242c8.png…]()
+![280510763-e36879a7-68b6-46c2-bbeb-c491d96242c8](https://github.com/Naveenvetrivel/Motor-Interfacing-/assets/94165322/c6d22f6f-7dbc-4389-bf01-05dc38b9532f)
+
 
 ## RESULT:
 Thus the motor was controlled using driver circuits, relays and Arduino UNO controller.
