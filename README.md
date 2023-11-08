@@ -5,6 +5,7 @@ To control the motor using driver circuits, relays and Arduino UNO controller.
 Arduino IDE </br>
 Proteous
 ## PROCEDURE:
+
 ### Arduino IDE
 Step1:Open the Arduino IDE </br>
 Step2: Go to file and select new file option </br>
@@ -53,7 +54,44 @@ The L298N is a dual H-Bridge motor driver which allows speed and direction contr
 
 
 ## PROGRAM:
+```
+#define in1 6
+#define in2 7
+#define button 4
+int rotDirection = 0;
+int pressed = false;
+int bs;
+void setup() {
+  
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(button, INPUT);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+}
+void loop() {
+   
+  bs=digitalRead(button);
+  if (bs==1) {
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
+    
+    delay(20);
+  }
+  else if(bs==0)  {
+     digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
+    delay(20);
+        
+  }
+  
+}
+```
 ## CIRCUIT DIAGRAM:
+![280510746-d1172922-a971-473d-9295-a875b81d7b26](https://github.com/Naveenvetrivel/Motor-Interfacing-/assets/94165322/418a18e0-cbc3-4f62-9263-0a8f2133a953)
+
 ## OUTPUT:
+![Uploading 280510763-e36879a7-68b6-46c2-bbeb-c491d96242c8.png…]()
+
 ## RESULT:
 Thus the motor was controlled using driver circuits, relays and Arduino UNO controller.
